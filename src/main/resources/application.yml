@@ -1,0 +1,31 @@
+
+#debug: true
+
+server:
+  port: 8085
+  servlet:
+    context-path: /mall
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: rootroot
+    url: jdbc:mysql://127.0.0.1:3306/mall?characterEncoding=utf-8&useSSL=false
+    druid:
+      initial-size: 5
+      max-active: 20
+      min-idle: 5
+      max-wait: 60000
+      min-evictable-idle-time-millis: 60000
+      pool-prepared-statements: true
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+
+
